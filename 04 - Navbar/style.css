@@ -63,7 +63,6 @@ button{
 @media screen and (max-width: 799px) {
   .navContainer{
     width: 100vw;
-    height: 72px;
     padding: 16px 0;
     display: block;
     overflow: hidden;
