@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*, html{
+  margin: 0;
+  padding: 0;
+}
+html{
+  box-sizing: border-box;
+  height: 100vh;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  background: url(./background.jpg);
+  background-size: cover;
+}
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu{
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.555);
+}
+h1{
+  font-size: 45px;
+  font-weight: 500;
+}
+button{
+  cursor: pointer;
+  transition: all linear 250ms;
+}
+#openBtn{
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  background-color: lightseagreen;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  margin-top: 50px;
+}
+#openBtn:hover{
+  background-color: white;
+  color: lightseagreen;
+}
+#openBtn:active{
+  box-shadow: inset 2px 1px 1px rgba(0, 0, 0, 0.4)
+}
+/* MODAL */
+.modalShow{
+  display: flex;
+}
+.backgroundModal{
+  background-color: #a1cef193;
+  box-shadow: none;
+}
+.modal{
+  position: absolute;
+  background-color: #ffffff;
+  width: 80%;
+  max-width: 600px;
+  height: 260px;
+  border-radius: 5px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.555)
+}
+#closeBtn{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+}
+.fa-times{
+  color: darkred;
+}
+#closeBtn:hover{
+  transform: scale(1.5);
+}
+.fa-times:hover{
+  color: rgba(139, 0, 0, 0.664);
+}
+#modalText{
+  font-size: 32px;
+  font-weight: 500;;
+  color: darkslategray
+}
+@media screen and (max-width: 500px) {
+  .menu{
+    height: 250px;
+  }
+  .modal{
+    height: 200px;
+  }
+  h1{
+    font-size: 32px;
+  }
+  button{
+    margin-top: 60px;
+  }
+  #closeBtn{
+    top: -40px;
+  }
+}
